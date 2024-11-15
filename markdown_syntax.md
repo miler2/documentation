@@ -6,6 +6,7 @@
     - [Cursiva](#cursiva)
     - [Negrita](#negrita)
     - [Negrita y cursiva](#negrita-y-cursiva)
+- [Indentación](#indentación)
 - [Escribir palabras de forma literal](#escribir-palabras-de-forma-literal)
 - [Mostrar texto para copiar](#mostrar-texto-para-copiar)
 - [Imágenes](#imágenes)
@@ -56,6 +57,47 @@ Ej:
 >\_Texto sin editar_
 >
 >_Texto editado_
+
+# Indentación
+
+Para indentar líneas normalmente sirve simplemente con escribir tabulador, pero no siempre es así. Por ejemplo, cuando queremos usar un "block quote" como este:
+
+>"build": {  
+>&nbsp;&nbsp;&nbsp;&nbsp;"builder": "@angular-devkit/build-angular:application",  
+>&nbsp;&nbsp;&nbsp;&nbsp;"options": {  
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"outputPath": "dist",  
+>}}
+
+Por defecto, aunque usemos tabulador, se muestra así:
+
+>"build": {  
+>"builder": "@angular-devkit/build-angular:application",  
+>"options": {  
+>"outputPath": "dist",  
+>}}
+
+Para hacer indentación tendremos que usar un workaround. En este caso le vamos a decir a markdown que escriba sí o sí un espacio, escribiendo esto:
+
+```
+&nbsp;
+```
+Es el equivalente a escribir un espacio, pero con esto le decimos de forma implícita que escriba un espacio sí o sí, de esta forma, para escribir tabulador tendremos que usar esto cuatro veces más o menos, dependiendo de la indentación que queramos.
+
+Para escribir lo que mostré antes, tendría que hacerse de esta manera:
+
+>"build": {  
+>\&nbsp;\&nbsp;\&nbsp;\&nbsp;"builder": "@angular-devkit/build-angular:application",  
+>\&nbsp;\&nbsp;\&nbsp;\&nbsp;"options": {  
+>\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;"outputPath": "dist",  
+>}}
+
+Recordemos que queda así:
+
+>"build": {  
+>&nbsp;&nbsp;&nbsp;&nbsp;"builder": "@angular-devkit/build-angular:application",  
+>&nbsp;&nbsp;&nbsp;&nbsp;"options": {  
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"outputPath": "dist",  
+>}}
 
 # Escribir palabras de forma literal
 Si queremos mostrar por pantalla lo que tenemos que escribir para hacer un comando, por ejemplo, cómo escribir lo siguiente sin que me lo convierta en una imágen automáticamente:
