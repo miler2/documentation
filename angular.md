@@ -1,10 +1,16 @@
 [*Go back to the index*](README.md)  
 
+# Index
+- [Installation](#installation)
+    - [dependencies](#dependencies)
+- [Workspace](#workspace)
+    - [How to create a workspace](#how-to-create-a-workspace)
+- [Commands](#commands)
+- [Documentación Oficial](#documentación-oficial)
+
 # INSTALLATION
 
 This guide will show you how to install the version 16 of angular. Even tho the later versions are different in how they manage the process of the installation, this readme is good for guidence regardless and will show you some important things to take in account on the installation and usage of Angular. Hope it is useful.
-
-[Official readme](#documentación-oficial) part of this guide.
 
 In order to use angular, we will need node.js, npm and angular cli. First we will need to install node.js, and we will select npm in the installation:
 

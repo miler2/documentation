@@ -1,7 +1,18 @@
 [*Go back to the index*](README.md)  
 
-# Markdown
-Aquí voy a documentar todo lo que puedo hacer con markdown de una forma rápida para poder verlo mientras trabajo.
+# Index
+- [Títulos](#títulos)
+- [Resaltar palabras o frases](#resaltar-palabras-o-frases)
+    - [Cursiva](#cursiva)
+    - [Negrita](#negrita)
+    - [Negrita y cursiva](#negrita-y-cursiva)
+- [Escribir palabras de forma literal](#escribir-palabras-de-forma-literal)
+- [Mostrar texto para copiar](#mostrar-texto-para-copiar)
+- [Imágenes](#imágenes)
+- [Enlaces](#enlaces)
+    - [Enlaces indexados](#enlaces-indexados)
+    - [Enlaces de directorios](#enlaces-de-directorios)
+
 
 # Títulos
 Si queremos usar títulos podemos usar "#".
