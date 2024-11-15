@@ -96,13 +96,13 @@ Ejemplo:
 
 ## Enlaces indexados
 
-También se puede guardar el enlace en una cadena de carácteres, por ejemplo:
+También se puede guardar el enlace en una cadena de carácteres, por ejemplo, si quieres guardar todos los links internos en una lista como esta:
 
-> \[palabra que usare para mostrar el enlace][enlace_con_mi_nombre]
->
-> \[enlace_con_mi_nombre]: https://direccion.del.enlace
+>\[1]: https://hola.com  
+>\[2]: https://google.com  
+>\[3]: https://github.com
 
-Ejemplo real:
+Se usarían así:
 
 >La página \[hola]\[1] es muy buena.
 >
