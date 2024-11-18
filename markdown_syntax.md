@@ -6,6 +6,10 @@
     - [Cursiva](#cursiva)
     - [Negrita](#negrita)
     - [Negrita y cursiva](#negrita-y-cursiva)
+    - [Resaltar una frase](#resaltar-una-frase)
+    - [Subrayar](#subrayar)
+    - [Cambiar el color](#cambiar-el-color)
+- [Comentarios](#comentarios)
 - [Indentación](#indentación)
 - [Escribir palabras de forma literal](#escribir-palabras-de-forma-literal)
 - [Mostrar texto para copiar](#mostrar-texto-para-copiar)
@@ -13,6 +17,7 @@
 - [Enlaces](#enlaces)
     - [Enlaces indexados](#enlaces-indexados)
     - [Enlaces de directorios](#enlaces-de-directorios)
+- [Símbolos](símbolos)
 
 
 # Títulos
@@ -58,15 +63,51 @@ Ej:
 >
 >_Texto editado_
 
-## Resaltar partes de una frase
+## Resaltar una frase
 Si quieres resaltar un ```texto como este``` es tan simple como escribirlo de la siguiente manera:
 
 >\```texto```
 
 Son comillas hacia atrás, y hacen falta tres en cada lado.
 
-# Indentación
 
+## Subrayar
+
+Para subrayar una palabra o frase es tan simple como usar el tag de HTML ```<u>```.
+
+>Cómo se escribe:  
+>&nbsp;&nbsp;&nbsp;&nbsp;\<u>texto subrayado\</u>  
+>
+>Cómo se vería:  
+>&nbsp;&nbsp;&nbsp;&nbsp;<u>texto subrayado</u>
+
+Nota: Hay que tener en cuenta que esta forma para subrayar no se acepta en todos los editores de markdown.
+
+## Cambiar el color
+Para cambiar el color podemos usar los tags de html y darles color así:
+
+>Cómo se escribe:  
+>&nbsp;&nbsp;&nbsp;&nbsp;\<font color="red">Este texto es rojo\</font>  
+>
+>Cómo se vería:  
+>&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">Este texto es rojo</font>
+
+El método con font está depreciado oficialmente, a si que podemos usar css como alternativa así si está soportado:
+
+>Cómo se escribe:  
+>\<p style="color:green">Este texto es verde\</p>  
+>
+>Cómo se vería:
+><p style="color:green">Este texto es verde</p>
+
+# Comentarios
+Un comentario es algo que solo podríamos ver en el código de markdown, pero no podríamos ver en la visualización final. Es especialmente útil si tenemos que usar el mismo código con varias personas o recordarnos algo a nosotros mismos más adelante.
+
+Para escribir comentarios en markdown tendremos que escribir el texto entre corchetes, luego dos puntos y luego un hashtag de esta manera:
+
+```[Esto no se muestra]: #```
+
+# Indentación
 Para indentar líneas normalmente sirve simplemente con escribir tabulador, pero no siempre es así. Por ejemplo, cuando queremos usar un "block quote" como este:
 
 >"build": {  
@@ -155,7 +196,6 @@ Ejemplo:
 > \[enlace](https://direccion.del.enlace)
 
 ## Enlaces indexados
-
 También se puede guardar el enlace en una cadena de carácteres, por ejemplo, si quieres guardar todos los links internos en una lista como esta:
 
 >\[1]: https://hola.com  
@@ -171,7 +211,6 @@ Se usarían así:
 Solo la palabra "hola" será mostrada junto a la frase, y si clicamos en ella nos llevará al enlace.
 
 ## Enlaces de directorios
-
 También es posible usar enlaces para llevar a una ruta en específico.
 
 Por ejemplo, si tenemos un readme con un conjunto de prácticas, y estamos listandolas, podemos añadir un enlace que lleve a su directorio correspondiente.
@@ -181,6 +220,48 @@ Ejemplo:
 >\[practica_1](practicas/practica_1/)
 
 Esto mostrará la palabra entre corchetes, y lo unirá al link entre paréntesis.
+
+# Símbolos
+Aquí hay una lista parcial de los símbolos en HTML que podemos usar en markdown:
+
+- Copyright (©) — &copy;
+- Registered trademark (®) — &reg;
+- Trademark (™) — &trade;
+- Euro (€) — &euro;
+- Left arrow (←) — &larr;
+- Up arrow (↑) — &uarr;
+- Right arrow (→) — &rarr;
+- Down arrow (↓) — &darr;
+- Degree (°) — &#176;
+- Pi (π) — &#960;
+
+Para una lista completa de los símbolos posibles en markdown, ir al artículo de wikipedia [HTML entities](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
+
+# Tablas
+En markdown también se pueden hacer tablas como esta:
+
+| Primera columna   | Segunda columna                                          | Otra columna |
+| ----------------- | -------------------------------------------------------- | ------------ |
+| Header            | Title                                                    | No se        |
+| Lista dentro      | Una lista: <ul><li>Item one.</li><li>Item two.</li></ul> | No se        |
+
+Se declaran así:
+
+```
+| Primera columna   | Segunda columna                                          | Otra columna |
+| ----------------- | -------------------------------------------------------- | ------------ |
+| Header            | Title                                                    | No se        |
+| Lista dentro      | Una lista: <ul><li>Item one.</li><li>Item two.</li></ul> | No se        |
+```
+
+No hace falta que estén indentadas, es solo para que se vea mejor. Pueden ser unas filas más cortas que otras así:
+
+```
+| Primera columna | Segunda columna | Otra columna |
+| - | ---------------------------------- | --------- |
+| Header | Title | No se |
+| Lista dentro | Una lista: <ul><li>Item one.</li><li>Item two.</li></ul> | No se |
+```
 
 ___
 [*Go back to the index*](README.md) 

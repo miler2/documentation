@@ -18,6 +18,8 @@ npm install ngx-cookie-service --save
 
 Now we can add this service to our ```app.module.ts``` as a provider.
 
+**Note**: If you do not have this file because you are in an angular version 18 or above then that's even better, you can just skip this step.
+
 >import {CookieService} from 'ngx-cookie-service';
 >
 >@NgModule({  
