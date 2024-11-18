@@ -58,6 +58,13 @@ Ej:
 >
 >_Texto editado_
 
+## Resaltar partes de una frase
+Si quieres resaltar un ```texto como este``` es tan simple como escribirlo de la siguiente manera:
+
+>\```texto```
+
+Son comillas hacia atrás, y hacen falta tres en cada lado.
+
 # Indentación
 
 Para indentar líneas normalmente sirve simplemente con escribir tabulador, pero no siempre es así. Por ejemplo, cuando queremos usar un "block quote" como este:

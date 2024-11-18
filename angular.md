@@ -123,6 +123,14 @@ If you want to create a component inside a folder you can simply write the comma
 
 >Ng g c [folder_name]/[component_name]
 
+## npm commands
+"npm is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently."  
+[Official documentation](https://docs.npmjs.com/cli/v10/commands/npm)
+___
+### --save
+This flag ensures that the installed package is saved to the dependencies section in package.
+
+
 # Static websites
 
 When you are using Angular for static websites you are going to have to change a couple of things of how you usually work with Angular. First one being that when you test your website locally, it will not correspond with the static websites sometimes even tho your code is correct. That is because you are going to have to compile your website into a folder using only JavaScript.
