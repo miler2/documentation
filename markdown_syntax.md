@@ -17,7 +17,7 @@
 - [Enlaces](#enlaces)
     - [Enlaces indexados](#enlaces-indexados)
     - [Enlaces de directorios](#enlaces-de-directorios)
-- [Símbolos](símbolos)
+- [Símbolos](#símbolos)
 
 
 # Títulos
@@ -224,16 +224,16 @@ Esto mostrará la palabra entre corchetes, y lo unirá al link entre paréntesis
 # Símbolos
 Aquí hay una lista parcial de los símbolos en HTML que podemos usar en markdown:
 
-- Copyright (©) — &copy;
-- Registered trademark (®) — &reg;
-- Trademark (™) — &trade;
-- Euro (€) — &euro;
-- Left arrow (←) — &larr;
-- Up arrow (↑) — &uarr;
-- Right arrow (→) — &rarr;
-- Down arrow (↓) — &darr;
-- Degree (°) — &#176;
-- Pi (π) — &#960;
+- Copyright (©) — \&copy;
+- Registered trademark (®) — \&reg;
+- Trademark (™) — \&trade;
+- Euro (€) — \&euro;
+- Left arrow (←) — \&larr;
+- Up arrow (↑) — \&uarr;
+- Right arrow (→) — \&rarr;
+- Down arrow (↓) — \&darr;
+- Degree (°) — \&#176;
+- Pi (π) — \&#960;
 
 Para una lista completa de los símbolos posibles en markdown, ir al artículo de wikipedia [HTML entities](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
 
