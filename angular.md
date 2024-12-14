@@ -15,7 +15,7 @@
 
 This guide will show you how to install the version 16 of angular. Even tho the later versions are different in how they manage the process of the installation, this readme is good for guidence regardless and will show you some important things to take in account on the installation and usage of Angular. Hope it is useful.
 
-In order to use angular, we will need node.js, npm and angular cli. First we will need to install node.js, and we will select npm in the installation:
+In order to use angular, we will need node.js, npm and angular cli. First we will need to install node.js, and we will select the first option:
 
 ![nodejs_installation_options](images/angular/nodejs_installation.png)
 
