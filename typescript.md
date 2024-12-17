@@ -52,7 +52,46 @@ There are a couple more things about this that I'd recommend checking out in the
 
 ## Different CSS files in one project
 
-Example:
+In order to have different css files you have to tell angular that you have them, and allow it to show to the website, otherwise it will give a 404 not found error.
+
+This is my file's structure in Angular:
+
+![file_structure-css_files.png](images/typescript/file_structure-css_files.png)
+
+What I want to do is to show styles.css to all devices, mobile.css to phones, and desktop.css to everything else.
+
+So I need to tell angular.json that the css stylesheet i'll be using is styles.css:
+
+```
+"styles": [
+    "src/app/styles/styles.css"
+],
+```
+Note: *We need to specify this in "test" and in "build" parts of the angular.json*
+
+However with this only, the website will only see this file, the way we tell the website that we have more files to use is to tell angular this is an asset so the website sees this.
+
+We can either give the file to the "public" folder, or create a new assets folder. To do this we have to write this in angular.json:
+
+```
+"assets": [
+    {
+        "glob": "**/*",
+        "input": "public"
+    },
+    {
+        "glob": "**/*",
+        "input": "src/app/styles"
+    }
+],
+```
+Note: *Just like before, we have to write this in two different places, "test" and "build" being "build" the most important of the two.*
+
+By default angular already has the public folder there.
+
+Right now we have no logic included with the files, meaning, the website does not know when to serve either css files. It only shows styles.css in the html document, even tho all the css files are seen by the website.
+
+To do this we will need to write the following code:
 
 **device-detection.service.ts**
 
